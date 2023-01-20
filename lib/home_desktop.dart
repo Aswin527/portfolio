@@ -78,42 +78,54 @@ class _HomeDesktopState extends State<HomeDesktop> {
               padding: EdgeInsets.all(50),
               child: Align(
                 alignment: Alignment.topLeft,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                child: Row(
                   children: [
-                    Text(
-                      'Hello, I\u0027m',
-                      style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.white,
-                          fontFamily: 'Roboto_Mono'),
-                    ),
-                    Text(
-                      'Aswin Ramesh',
-                      style: TextStyle(
-                          fontSize: 50,
-                          color: Color(0xff00c399),
-                          fontFamily: 'Roboto_Mono'),
-                    ),
-                    Text('Software Developer',
-                        style: TextStyle(
-                            fontSize: 20,
-                            color: Colors.white,
-                            fontFamily: 'Roboto_Mono')),
-                    SizedBox(
-                      height: 20,
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Hello, I\u0027m',
+                          style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.white,
+                              fontFamily: 'Roboto_Mono'),
+                        ),
+                        Text(
+                          'Aswin Ramesh',
+                          style: TextStyle(
+                              fontSize: 50,
+                              color: Color(0xff00c399),
+                              fontFamily: 'Roboto_Mono'),
+                        ),
+                        Text('Software Developer',
+                            style: TextStyle(
+                                fontSize: 20,
+                                color: Colors.white,
+                                fontFamily: 'Roboto_Mono')),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Container(
+                          height: 120,
+                          width: 600,
+                          child: Text(
+                              'A passionate Software Developer also an enthusiast who always try do things that challenges my skills, updates my current knowledge, and sharpens my training. Want to broaden my horizons and gain a different perspective so that it can look at the same thing from a variety of angles.',
+                              style: TextStyle(
+                                  fontSize: 14,
+                                  color: Colors.white,
+                                  fontFamily: 'Roboto_Mono')),
+                        ),
+                      ],
                     ),
                     Container(
-                      height: 120,
-                      width: 600,
-                      child: Text(
-                          'A passionate Software Developer also an enthusiast who always try do things that challenges my skills, updates my current knowledge, and sharpens my training. Want to broaden my horizons and gain a different perspective so that it can look at the same thing from a variety of angles.',
-                          style: TextStyle(
-                              fontSize: 14,
-                              color: Colors.white,
-                              fontFamily: 'Roboto_Mono')),
-                    ),
-                    
+                      child: Center(
+                        child: Image.asset(
+                          'hi.png',
+                          height: 530,
+                          width: 530,
+                        ),
+                      ),
+                    )
                   ],
                 ),
               ),
